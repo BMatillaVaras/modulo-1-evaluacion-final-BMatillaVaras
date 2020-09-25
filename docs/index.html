@@ -12,8 +12,8 @@
   </head>
 
   <body>
-    <header class="header">
-      <a href="https://adalab.es/" target="blank"
+    <header id="home">
+      <a href="https://adalab.es/" target="blank" class="header__menu"
         ><img src="./assets/images/ico-menu.svg" alt="Menú"
       /></a>
     </header>
@@ -22,25 +22,23 @@
       <section class="hero">
         <h1 class="hero__title">Anonymous Proxy</h1>
         <p class="hero__text">In hac habitasse platea dictumst.</p>
-        <a href="" class="hero__anchor"
+        <a href="#section2" class="hero__anchor"
           ><img src="./assets/images/ico-scroll-down.svg" alt="Ir a 3 Reasons"
         /></a>
       </section>
 
       <section class="section1">
-        <h2 class="section1__description">Insomnia Tips</h2>
-        <h3 class="section1__title">Looking Through A Window</h3>
+        <h2 class="section1__description">Insomnia tips</h2>
+        <h3 class="section1__title">Looking through a window</h3>
         <p class="section1__text">
           Donec accumsan, nulla ut volutpat porttitor, quam odio tempus felis, at
           luctus ex diam nec lectus. Vivamus semper sodales rutrum.
         </p>
-        <div class="section1__anchor">
-          <a href="" class="section1__anchor--text">Go</a>
-        </div>
+        <a href="" class="section1__anchor" title="Ir al artículo">Go</a>
       </section>
 
       <section class="section2">
-        <h2 class="section2__title">3 Reasons To Purchase</h2>
+        <h2 class="section2__title" id="section2">3 Reasons To Purchase</h2>
         <div class="section2__articles">
           <article>
             <h3 class="section2__articles--title">Ut sed metus</h3>
@@ -67,45 +65,70 @@
     </main>
 
     <footer class="footer">
-      <div>
-        <a href=""><img src="./assets/images/ico-arrow.svg" alt="" /></a>
-      </div>
+      <a href="#home" class="footer__anchor"
+        ><img src="./assets/images/ico-arrow.svg" alt=""
+      /></a>
       <div class="footer__menus">
         <nav>
           <ul class="menu-page">
             <li>
-              <a href="https://adalab.es/" target="blank">Articles</a>
+              <a href="https://adalab.es/" target="blank" class="menu-page__links"
+                >Articles</a
+              >
             </li>
             <li>
-              <a href="https://adalab.es/" target="blank">Books</a>
+              <a href="https://adalab.es/" target="blank" class="menu-page__links"
+                >Books</a
+              >
             </li>
             <li>
-              <a href="https://adalab.es/" target="blank">Events</a>
+              <a href="https://adalab.es/" target="blank" class="menu-page__links"
+                >Events</a
+              >
             </li>
             <li>
-              <a href="https://adalab.es/" target="blank">Reasons</a>
+              <a href="https://adalab.es/" target="blank" class="menu-page__links"
+                >Reasons</a
+              >
             </li>
             <li>
-              <a href="https://adalab.es/" target="blank">Tips</a>
+              <a href="https://adalab.es/" target="blank" class="menu-page__links"
+                >Tips</a
+              >
             </li>
           </ul>
         </nav>
         <nav>
-          <ul class="menu-socia-media">
+          <ul class="menu-social-media">
             <li>
-              <a href="https://adalab.es/" target="blank">Twitter</a>
+              <a
+                href="https://adalab.es/"
+                target="blank"
+                class="menu-social-media__links"
+                >Twitter</a
+              >
             </li>
             <li>
-              <a href="https://adalab.es/" target="blank">Instagram</a>
+              <a
+                href="https://adalab.es/"
+                target="blank"
+                class="menu-social-media__links"
+                >Instagram</a
+              >
             </li>
             <li>
-              <a href="https://adalab.es/" target="blank">Mastodon.social</a>
+              <a
+                href="https://adalab.es/"
+                target="blank"
+                class="menu-social-media__links"
+                >Mastodon.social</a
+              >
             </li>
           </ul>
         </nav>
-        <small class="footer__menus-small">
-          <p>&copy; 2017</p>
-          <p>we ❤︎ components</p>
+        <small class="footer__menus--small">
+          <p >&copy; 2017</p>
+          <p >we <span class="small__heart">&#10084</span> components</p>
         </small>
       </div>
     </footer>
