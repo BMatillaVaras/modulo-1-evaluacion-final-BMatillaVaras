@@ -1,3 +1,23 @@
+@keyframes arrow {
+  from {
+    opacity: 0;
+    transform: scale(1) translate(0, 0);
+    background-color: $color-header-footer;
+    border-radius: 22.5px;
+  }
+  50% {
+    opacity: 1;
+    transform: scale(1.5) translate(0, -30px) rotate(360deg);
+    background-color: $color-dark;
+    border-radius: 10px;
+  }
+  to {
+    opacity: 0;
+    transform: scale(1) translate(0, 0) rotate(360deg);
+    background-color: $color-header-footer;
+    border-radius: 22.5px;
+  }
+}
 .footer {
   background-color: $color-dark;
   display: flex;
@@ -14,6 +34,10 @@
   border-radius: 22.5px;
   position: relative;
   bottom: 22.5px;
+  animation-name: arrow;
+  animation-duration: 2s;
+  animation-delay: 2s;
+  animation-iteration-count: 4;
 }
 
 .footer__menus--small {
