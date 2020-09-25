@@ -6,6 +6,7 @@
 
 .section2__title {
   font-family: $font-title;
+  text-transform: capitalize;
   font-size: 24px;
   line-height: 30px;
   padding-top: 30px;
@@ -43,6 +44,16 @@
   font-size: 20px;
   line-height: 45px;
   margin-bottom: 60px;
+  transition: color 1s, background-color 0.5s, border 1s, font-size 1s,
+    text-shadow 1s;
+}
+
+.section2__anchor:hover {
+  color: $color-complementary;
+  background-color: $color-header-footer;
+  border: 2px solid $color-medium;
+  font-size: 25px;
+  text-shadow: 2px 2px $color-medium;
 }
 
 @media all and (min-width: 768px) {
@@ -66,6 +77,9 @@
     font-size: 20px;
     margin-top: 14px;
   }
+  .section2__anchor {
+    width: 210px;
+  }
 }
 @media all and (min-width: 1200px) {
   .section2 {
@@ -76,5 +90,8 @@
   }
   .section2__articles {
     column-gap: 26.2px;
+  }
+  .section2__anchor {
+    width: 255px;
   }
 }
