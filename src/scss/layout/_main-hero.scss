@@ -20,7 +20,6 @@
     color: $color-header-footer;
     font-family: $font-text;
     font-size: 16px;
-    text-align: center;
     margin-bottom: 45px;
   }
   &__anchor {
@@ -30,7 +29,6 @@
     border-radius: 22.5px;
     display: flex;
     justify-content: center;
-    align-items: center;
     margin-bottom: 53px;
   }
   @media all and (min-width: 768px) {
